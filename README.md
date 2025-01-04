@@ -43,6 +43,16 @@ curl -X POST https://localhost:7128/api/password/generate \
   }
 }
 ```
+
+`Expected Response (Error)`
+```json
+{
+  "status": 400,
+  "data": null,
+  "error": "Invalid password length range."
+}
+```
+If the maxLength is less than minLength or minLength is less than 1, the API will return a 400 Bad Request error with the message: “Invalid password length range.”
 <br/>
 
 ## Project Structure
