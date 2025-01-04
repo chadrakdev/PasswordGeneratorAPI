@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/chadrakh/Developer/PasswordGeneratorAPI/PasswordGeneratorAPI/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/chadrakh/Developer/PasswordGeneratorAPI/PasswordGeneratorAPI/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/chadrakh/Developer/PasswordGeneratorAPI/PasswordGeneratorAPI/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/chadrakh/Developer/PasswordGeneratorAPI/PasswordGeneratorAPI/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/chadrakh/Developer/PasswordGeneratorAPI/PasswordGeneratorAPI/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/chadrakh/Developer/PasswordGeneratorAPI/PasswordGeneratorAPI/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/chadrakh/Developer/PasswordGeneratorAPI/PasswordGeneratorAPI/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/chadrakh/Developer/PasswordGeneratorAPI/PasswordGeneratorAPI/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.PasswordGeneratorAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.PasswordGeneratorAPI.props",
+      "PackagePath": "build\\PasswordGeneratorAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.PasswordGeneratorAPI.props",
+      "PackagePath": "buildMultiTargeting\\PasswordGeneratorAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.PasswordGeneratorAPI.props",
+      "PackagePath": "buildTransitive\\PasswordGeneratorAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
