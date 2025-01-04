@@ -1,0 +1,62 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore Rider project-specific files
+.idea/
+.idea_modules/
+
+# Ignore temporary files, logs, and other artifacts
+*.log
+*.vs/
+.vscode/
+*.userprefs
+*.suo
+*.user
+*.sln.docstates
+*.tmp
+
+# Ignore compiled code
+*.dll
+*.exe
+*.pdb
+*.cache
+*.manifest
+*.vspscc
+*.vssscc
+*.refint/
+
+# Ignore nuget packages and generated files
+*.nupkg
+packages/
+*.snupkg
+
+# Ignore by-products of nuget
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore test result artifacts
+TestResults/
+*.trx
+*.coverage
+
+# Ignore coverage tool output
+*.coverage
+*.coveragexml
+coverage-reports/
+
+# Ignore IDE backups and config
+*.bak
+*.config
+*.sln.docstates
+
+# Ignore global JetBrains Rider IDE files
+*.idea/
+.idea_modules/
+*.iml
