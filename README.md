@@ -3,7 +3,7 @@ A REST API for generating secure passwords and validating password security, wit
 
 ## Endpoints
 ### Generate
-`POST`
+`Example POST Request`
 ```shell
 curl -X POST https://localhost:7128/api/password/generate \
   -H "Content-Type: application/json" \
@@ -16,18 +16,7 @@ curl -X POST https://localhost:7128/api/password/generate \
   }' -k
 ```
 
-`Example Request`
-```json
-{
-  "minLength": 8,
-  "maxLength": 12,
-  "isMixedCase": true,
-  "isAlphanumeric": true,
-  "includeSpecialCharacters": false
-}
-```
-
-`Expected Response`
+`Expected Response (Success)`
 ```json
 {
   "status": 200,
