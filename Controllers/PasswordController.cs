@@ -16,14 +16,29 @@ public class PasswordController : ControllerBase
     }
 
     [HttpPost("generate")]
-    public ActionResult<string> GeneratePassword([FromBody] PasswordCriteria criteria)
+    public ActionResult<PasswordResponse> GeneratePassword([FromBody] PasswordCriteria criteria)
     {
         if (criteria.MaxLength < criteria.MinLength || criteria.MinLength < 1)
         {
-            return BadRequest("Invalid password length range.");
+            return BadRequest(new PasswordResponse
+            {
+                Status = 400,
+                Error = "Invalid password length range."
+            });
         }
 
         var password = _passwordGeneratorService.GeneratePassword(criteria);
-        return Ok(password);
+        
+        var response = new PasswordResponse
+        {
+            Status = 200,
+            Data = new PasswordResponseData
+            {
+                Response = password,
+                Criteria = criteria
+            }
+        };
+        
+        return Ok(response);
     }
 }
