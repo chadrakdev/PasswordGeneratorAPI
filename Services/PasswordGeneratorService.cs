@@ -5,16 +5,9 @@ namespace PasswordGeneratorAPI.Services;
 
 public class PasswordGeneratorService
 {
-    private readonly PasswordCriteria _passwordCriteria;
-
-    public PasswordGeneratorService(PasswordCriteria passwordCriteria)
+    public string GeneratePassword(PasswordCriteria criteria)
     {
-        this._passwordCriteria = passwordCriteria;
-    }
-    
-    public string GeneratePassword()
-    {
-        int length = _passwordCriteria.GetRandomLength();
+        int length = criteria.GetRandomLength();
         var password = new StringBuilder();
 
         string lowerCaseChars = "abcdefghijklmnopqrstuvwxyz";
@@ -24,7 +17,7 @@ public class PasswordGeneratorService
 
         string allowedChars = string.Empty;
 
-        if (_passwordCriteria.IsMixedCase)
+        if (criteria.IsMixedCase)
         {
             allowedChars += lowerCaseChars + upperCaseChars;
         }
@@ -33,12 +26,12 @@ public class PasswordGeneratorService
             allowedChars += lowerCaseChars;
         }
 
-        if (_passwordCriteria.IsAlphanumeric)
+        if (criteria.IsAlphanumeric)
         {
             allowedChars += numbers;
         }
 
-        if (_passwordCriteria.IncludeSpecialCharacters)
+        if (criteria.IncludeSpecialCharacters)
         {
             allowedChars += specialChars;
         }

@@ -23,7 +23,7 @@ public class PasswordController : ControllerBase
             return BadRequest("Invalid password length range.");
         }
 
-        var password = _passwordGeneratorService.GeneratePassword();
+        var password = _passwordGeneratorService.GeneratePassword(criteria);
         return Ok(password);
     }
 }
