@@ -61,3 +61,9 @@ If the maxLength is less than minLength or minLength is less than 1, the API wil
 ### Services
 `PasswordGeneratorService` encapsulates the business logic for improved separation of concerns
 <br/>
+
+### Future update(s)
+- Introduce human-friendly password criteria option
+  - Program will pull in a Dictionary of words to generate human-friendly passwords with randomised word combinations
+- Strength validity measure
+- Encryption support for sensitive data handling by encryption using RSA to be able to include both a plaintext and encrypted version
